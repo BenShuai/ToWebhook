@@ -1,0 +1,7 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Dictionary>
+    <items name="sys">
+		<item key="webhook" value="https://oapi.dingtalk.com/robot/send?access_token=*******************************************" /><!-- 这里填入webhook地址-->
+	</items>
+	
+</Dictionary>

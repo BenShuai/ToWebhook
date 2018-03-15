@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="View/css/style.css" />
+<script src="View/js/jquery-1.7.2.js"></script>
+<title>太平稽核中心-太平e稽核APP下载</title>
+</head>
+<script>
+$(function(){
+	$('.cl img:eq(1)').hide();
+	$('.nav span:eq(0)').click(function(){
+		$(this).addClass('selected').siblings().removeClass('selected')
+		$('.cl img:eq(0)').fadeIn();
+		$('.cl img:eq(1)').fadeOut();
+	});
+	$('.nav span:eq(1)').click(function(){
+		$(this).addClass('selected').siblings().removeClass('selected')
+		$('.cl img:eq(1)').fadeIn();
+		$('.cl img:eq(0)').fadeOut();
+	});
+});
+function getIOS(){
+	window.location.href="http://intest.life.cntaiping.com/mobile/Newdown?sAction=ajaxQueryIpadAppType&osType=pc&appCode=5#";
+}
+</script>
+<body >
+<div class="head">
+	<div class="inner">
+        <h1 class="logo"></h1>
+        <div class="nav">
+        	<span class="android selected"></span>
+        	<span class="ios" onclick="getIOS()"></span>
+    	</div>
+    </div>
+</div>
+<div class="inner">
+	<div class="cl">
+    	<img src="View/img/a.png" />
+    	<img src="View/img/i.png" />
+    </div>
+	<div class="cr">
+    	<img src="View/img/r_t.png"/>
+        <a href="/TPAudit/apk/01.apk" class="link">下载</a>
+    </div>
+</div>
+</body>
+</html>
